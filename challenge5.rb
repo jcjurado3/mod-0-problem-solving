@@ -5,7 +5,10 @@
 # pseudocode: declare a variable with the string object. Then use .capitalize and print results. 
 # Final Solution: 
 
-array = "turing is the best"
+string = "turing is the best"
 
- array.each do |arr|
-    arr.map
+def title(str)
+    str.split.map(&:capitalize).join(" ")
+end
+
+p title(string)
